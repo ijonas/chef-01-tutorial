@@ -1,0 +1,21 @@
+chef-01-tutorial Source Code
+============================
+
+This repo contains the source code to follow the Chef-Solo tutorial posted at http://www.denofubiquity.com/howto/installing-a-wordpress-blog-with-chef-solo/.
+
+Please follow my instructions in the tutorial to get Chef installed. The five recipes included in this repo are almost identical to the Opscode originals, with a small ammendment in the Wordpress recipe to allow it to run on a Chef-Solo instance.
+
+Installation
+============
+mkdir /tmp/chef-solo
+git clone http://github.com/ijonas/chef-01-tutorial.git cookbooks
+cd cookbooks
+mv blogstack.json solo.rb
+cd ~
+sudo chef-solo -c ~/solo.rb -j ~/blogstack.json
+
+License
+=======
+(c) Ijonas Kisselbach 2010
+Opscode recipes used are by Joshua Timberman (c) Opscode, Inc. 2009
+Published under a Apache 2 License.
