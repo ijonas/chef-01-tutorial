@@ -8,6 +8,7 @@ Please follow my instructions in the tutorial to get Chef installed. The five re
 Installation
 ============
 mkdir /tmp/chef-solo
+cd /tmp/chef-solo
 git clone http://github.com/ijonas/chef-01-tutorial.git cookbooks
 cd cookbooks
 mv blogstack.json solo.rb ~
