@@ -10,7 +10,7 @@ Installation
 mkdir /tmp/chef-solo
 git clone http://github.com/ijonas/chef-01-tutorial.git cookbooks
 cd cookbooks
-mv blogstack.json solo.rb
+mv blogstack.json solo.rb ~
 cd ~
 sudo chef-solo -c ~/solo.rb -j ~/blogstack.json
 
